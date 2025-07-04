@@ -10,18 +10,21 @@ def elenco(request):
         "Nome": "LeBron James",
         "Posição": "Ala-Pivô",
         'Número': "23",
+        "foto":,
 
         "id": 2,
         "Nome": "Luka Doncit",
         "Posição": "Armador",
         'Número': "77",
+        "foto":,
 
         "id": 3,
         "Nome": "Austin Reaves",
         "Posição": "Armador",
         'Número': "15",
+        "foto":,
     }
 
 def sobre(request):
-    return render(request, "Lakers/sobre.html")
+    return render(request, "Lakers/sobre.html") 
 
