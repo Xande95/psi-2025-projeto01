@@ -4,18 +4,14 @@ def index(request):
     return render(request, "Lakers/index.html")
 
 
-
-
-def jogadores(request):
-
-    return render(request, "Lakers/jogadores.html", context)
-        jogadores = [ 
+lista_jogadores = [ 
     {
         "id": 1,
         "Nome": "LeBron James",
         "Posição": "Ala-Pivô",
         'Número': "23",
-        "foto": "static/Lakers/img/LebBronJames.jpg",}
+        "foto": "static/Lakers/img/LebBronJames.jpg",
+        }
     {
         "id": 2,
         "Nome": "Luka Doncit",
@@ -80,12 +76,15 @@ def jogadores(request):
     ,]
 
 
+def jogadores(request):
+    context = {
+        'jogadores': lista_jogadores
+    }
+    return render(request, "Lakers/jogadores.html", context)
+    
 
 
-
-def sobre(request):
-    return render(request, "Lakers/sobre.html") 
-    sobre[
+lista_sobre = [
     "História": """1947–1958: Início e a dinastia de Minneapolis 
     A franquia dos Lakers começou em 1947, quando Ben Berger e Morris Chalfen, de Minnesota, compraram a recentemente dissolvida franquia Detroit Gems da National Basketball League (NBL) por US$15,000 do fundador/proprietário dos Gems, 
     C. King Boring, e seu parceiro de negócios, Maury Winston.[11] Eles contrataram John Kundla como seu primeiro treinador principal.Berger e Chalfen realocaram o time para Minneapolis, com jogos em casa sendo disputados no Minneapolis Auditorium e no Minneapolis Armory. O time que Berger e Chalfen compraram consistia apenas de equipamentos; já que o time parecia estar prestes a fechar, todos os seus jogadores já haviam sido designados para outras equipes da NBL. A franquia foi rebatizada como "Lakers" em referência ao apelido de Minnesota, 
@@ -109,4 +108,9 @@ def sobre(request):
     NBA: 17 títulos (segundo maior campeão)
     Copa NBA: 1"""
 ]
-    return render(request, "Lakers/sobre.html") 
+
+def sobre(request):
+    context = {
+        'sobre': lista_sobre
+    }
+    return render(request, "Lakers/sobre.html", context)
