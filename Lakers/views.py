@@ -3,21 +3,13 @@ from django.shortcuts import render
 def index(request):
     return render(request, "Lakers/index.html")
 
-def elenco(request):
-    return render(request, "Lakers/elenco.html")
-    jogadores{
-        "id": 1,
-        "Nome": "LeBron James",
-        "Posição": "Ala-Pivô",
-        'Número': "23",
-        "foto":,
 
-        "id": 2,
-        "Nome": "Luka Doncit",
-        "Posição": "Armador",
-        'Número': "77",
-        "foto":,
 
+
+def jogadores(request):
+
+    return render(request, "Lakers/jogadores.html", context)
+        
         "id": 3,
         "Nome": "Austin Reaves",
         "Posição": "Armador",
@@ -64,7 +56,7 @@ def elenco(request):
         "Posição": "Pivô",
         'Número': "55",
         "foto":0,
-    },
+    ,
 
 
     
