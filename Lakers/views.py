@@ -9,54 +9,75 @@ def index(request):
 def jogadores(request):
 
     return render(request, "Lakers/jogadores.html", context)
-        
+        jogadores = [ 
+    {
+        "id": 1,
+        "Nome": "LeBron James",
+        "Posição": "Ala-Pivô",
+        'Número': "23",
+        "foto": 0,}
+    {
+        "id": 2,
+        "Nome": "Luka Doncit",
+        "Posição": "Armador",
+        'Número': "77",
+        "foto":0,
+        },
+    {
         "id": 3,
         "Nome": "Austin Reaves",
         "Posição": "Armador",
         'Número': "15",
-        "foto":,
-         "id": 5,
+        "foto":0,
+    },
+    {"id": 4,
+        "Nome": "Bronny James",
+        "Posição": "Armador",
+        'Número': "9",
+        "foto":0,}
+
+        {"id": 5,
         "Nome": "Rui Hachimura",
         "Posição": "ala-pivô",
         'Número': "28",
-        "foto":0,
+        "foto":0,}
 
-        "id": 6,
+        {"id": 6,
         "Nome": "Gabe Vicent",
         "Posição": "Ala-Armador",
         'Número': "7",
-        "foto":0,
+        "foto":0,}
 
-        "id": 7,
+        {"id": 7,
         "Nome": "Jaxon Reyes",
         "Posição": "Pivô",
         'Número': "11",
-        "foto":0,
+        "foto":0,}
 
-        "id": 8,
+        {"id": 8,
         "Nome": "Dalton Knecht",
         "Posição": "Armador",
         'Número': "4",
-        "foto":0,
+        "foto":0,}
 
-        "id": 9,
+        {"id": 9,
         "Nome": "Alex Len",
         "Posição": "Pivô",
         'Número': "27",
-        "foto":0,
+        "foto":0,}
 
-        "id": 10,
+        {"id": 10,
         "Nome": "Shake Milton",
         "Posição": "Ala-Pivô",
         'Número': "20",
-        "foto":0,
+        "foto":0,}
 
-        "id": 11,
+        {"id": 11,
         "Nome": "Trey Jemisson III",
         "Posição": "Pivô",
         'Número': "55",
-        "foto":0,
-    ,
+        "foto":0,}
+    ,]
 
 
     
