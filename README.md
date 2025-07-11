@@ -10,3 +10,4 @@
 ## Equipe
 - José Alexandre
 - Paulo Gabriel
+- Wellington Rato
