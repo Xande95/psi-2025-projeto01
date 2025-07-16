@@ -8,70 +8,70 @@ lista_jogadores = [
     {
         "id": 1,
         "Nome": "LeBron James",
-        "Posição": "Ala-Pivô",
+        "posicao": "Ala-Pivô",
         'Número': "23",
         "foto": "{% static 'Lakers/img/LebBronJames.jpg' %} ",
         },
     {
         "id": 2,
         "Nome": "Luka Dončić",
-        "Posição": "Armador",
+        "posicao": "Armador",
         'Número': "77",
         "foto":"{% static 'Lakers/img/luka_don.jpeg' %} ",
         },
     {
         "id": 3,
         "Nome": "Austin Reaves",
-        "Posição": "Armador",
+        "posicao": "Armador",
         'Número': "15",
         "foto":"{% static 'Lakers/img/austin_reaves.jpeg' %} ",
     },
     {   "id": 4,
         "Nome": "Bronny James",
-        "Posição": "Armador",
+        "posicao": "Armador",
         'Número': "9",
         "foto":"{% static 'Lakers/img/bronny.jpeg' %} ",
         },
 
         {"id": 5,
         "Nome": "Rui Hachimura",
-        "Posição": "ala-pivô",
+        "posicao": "ala-pivô",
         'Número': "28",
         "foto":"{% static 'Lakers/img/hachimura.jpeg' %} ",},
 
         {"id": 6,
         "Nome": "Gabe Vicent",
-        "Posição": "Ala-Armador",
+        "posicao": "Ala-Armador",
         'Número': "7",
         "foto":"{% static 'Lakers/img/gabe_vincent.jpeg' %} ",},
 
         {"id": 7,
         "Nome": "Jaxon Hayes",
-        "Posição": "Pivô",
+        "posicao": "Pivô",
         'Número': "11",
         "foto":"{% static 'Lakers/img/jaxson_reyes.jpeg' %} ",},
 
         {"id": 8,
         "Nome": "Dalton Knecht",
-        "Posição": "Armador",
+        "posicao": "Armador",
         'Número': "4",
         "foto":"{% static 'Lakers/img/dalton.jpeg' %} ",},
 
         {"id": 9,
         "Nome": "Alex Len",
-        "Posição": "Pivô",
+        "posicao": "Pivô",
         'Número': "27",
         "foto":"{% static 'Lakers/img/len.jpeg' %} ",},
 
         {"id": 10,
         "Nome": "Shake Milton",
-        "Posição": "Ala-Pivô",
+        "posicao": "Ala-Pivô",
         'Número': "20",
         "foto":"{% static 'Lakers/img/shake_milton.png' %} ",},
 
         {"id": 11,
         "Nome": "Trey Jemisson III",
-        "Posição": "Pivô",
+        "posicao": "Pivô",
         'Número': "55",
         "foto":"{% static 'Lakers/img/trey.png' %} ",},
         ]
@@ -86,7 +86,7 @@ def jogadores(request):
 
 
 lista_sobre = {
-    "História": """1947–1958: Início e a dinastia de Minneapolis 
+    "historia": """1947–1958: Início e a dinastia de Minneapolis 
     A franquia dos Lakers começou em 1947, quando Ben Berger e Morris Chalfen, de Minnesota, compraram a recentemente dissolvida franquia Detroit Gems da National Basketball League (NBL) por US$15,000 do fundador/proprietário dos Gems, 
     C. King Boring, e seu parceiro de negócios, Maury Winston.[11] Eles contrataram John Kundla como seu primeiro treinador principal.Berger e Chalfen realocaram o time para Minneapolis, com jogos em casa sendo disputados no Minneapolis Auditorium e no Minneapolis Armory. O time que Berger e Chalfen compraram consistia apenas de equipamentos; já que o time parecia estar prestes a fechar, todos os seus jogadores já haviam sido designados para outras equipes da NBL. A franquia foi rebatizada como "Lakers" em referência ao apelido de Minnesota, 
     "A Terra dos 10.000 Lagos".[12] Berger e Chalfen trouxeram Max Winter, que mais tarde se tornaria um dos fundadores e proprietários do Minnesota Vikings da NFL, para ser o novo gerente geral dos Lakers. Winter também adquiriu uma participação na equipe, que ele manteria até deixar os Lakers em 1955.
@@ -105,13 +105,10 @@ lista_sobre = {
 
     Os futuros Hall da Fama Shaquille O'Neal (esquerda) e Kobe Bryant (direita), ajudaram os Lakers a vencer o tri-campeonato da NBA. Apesar de se entenderem bem na quadra, eles tiveram muitos problemas de relacionamente fora dela.
     Durante a temporada de 1996-97, os Lakers adquiriram o jovem de 17 anos Kobe Bryant do Charlotte Hornets em troca de Vlade Divac; Bryant foi selecionado na 13ª posição no draft daquele ano, vindo da Lower Merion High School em Ardmore, Pensilvânia, pelo Charlotte.[87] Los Angeles também assinou com o agente livre e ex-pivô do Orlando Magic, Shaquille O'Neal.[88""",    
-    "Titulos": """Conferencia Leste: 32
+    "titulos": """Conferencia Leste: 32
     NBA: 17 títulos (segundo maior campeão)
     Copa NBA: 1"""
 }
 
 def sobre(request):
-    context = {
-        'sobre': lista_sobre
-    }
-    return render(request, "Lakers/sobre.html", context)
+    return render(request, "Lakers/sobre.html", lista_sobre)
