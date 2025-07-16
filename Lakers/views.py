@@ -11,7 +11,7 @@ lista_jogadores = [
         "Posição": "Ala-Pivô",
         'Número': "23",
         "foto": "static/Lakers/img/LebBronJames.jpg",
-        }
+        },
     {
         "id": 2,
         "Nome": "Luka Doncit",
@@ -26,54 +26,55 @@ lista_jogadores = [
         'Número': "15",
         "foto":0,
     },
-    {"id": 4,
+    {   "id": 4,
         "Nome": "Bronny James",
         "Posição": "Armador",
         'Número': "9",
-        "foto":0,}
+        "foto":0,
+        },
 
         {"id": 5,
         "Nome": "Rui Hachimura",
         "Posição": "ala-pivô",
         'Número': "28",
-        "foto":0,}
+        "foto":0,},
 
         {"id": 6,
         "Nome": "Gabe Vicent",
         "Posição": "Ala-Armador",
         'Número': "7",
-        "foto":0,}
+        "foto":0,},
 
         {"id": 7,
         "Nome": "Jaxon Reyes",
         "Posição": "Pivô",
         'Número': "11",
-        "foto":0,}
+        "foto":0,},
 
         {"id": 8,
         "Nome": "Dalton Knecht",
         "Posição": "Armador",
         'Número': "4",
-        "foto":0,}
+        "foto":0,},
 
         {"id": 9,
         "Nome": "Alex Len",
         "Posição": "Pivô",
         'Número': "27",
-        "foto":0,}
+        "foto":0,},
 
         {"id": 10,
         "Nome": "Shake Milton",
         "Posição": "Ala-Pivô",
         'Número': "20",
-        "foto":0,}
+        "foto":0,},
 
         {"id": 11,
         "Nome": "Trey Jemisson III",
         "Posição": "Pivô",
         'Número': "55",
-        "foto":0,}
-    ,]
+        "foto":0,},
+        ]
 
 
 def jogadores(request):
@@ -84,7 +85,7 @@ def jogadores(request):
     
 
 
-lista_sobre = [
+lista_sobre = {
     "História": """1947–1958: Início e a dinastia de Minneapolis 
     A franquia dos Lakers começou em 1947, quando Ben Berger e Morris Chalfen, de Minnesota, compraram a recentemente dissolvida franquia Detroit Gems da National Basketball League (NBL) por US$15,000 do fundador/proprietário dos Gems, 
     C. King Boring, e seu parceiro de negócios, Maury Winston.[11] Eles contrataram John Kundla como seu primeiro treinador principal.Berger e Chalfen realocaram o time para Minneapolis, com jogos em casa sendo disputados no Minneapolis Auditorium e no Minneapolis Armory. O time que Berger e Chalfen compraram consistia apenas de equipamentos; já que o time parecia estar prestes a fechar, todos os seus jogadores já haviam sido designados para outras equipes da NBL. A franquia foi rebatizada como "Lakers" em referência ao apelido de Minnesota, 
@@ -103,11 +104,11 @@ lista_sobre = [
 
 
     Os futuros Hall da Fama Shaquille O'Neal (esquerda) e Kobe Bryant (direita), ajudaram os Lakers a vencer o tri-campeonato da NBA. Apesar de se entenderem bem na quadra, eles tiveram muitos problemas de relacionamente fora dela.
-    Durante a temporada de 1996-97, os Lakers adquiriram o jovem de 17 anos Kobe Bryant do Charlotte Hornets em troca de Vlade Divac; Bryant foi selecionado na 13ª posição no draft daquele ano, vindo da Lower Merion High School em Ardmore, Pensilvânia, pelo Charlotte.[87] Los Angeles também assinou com o agente livre e ex-pivô do Orlando Magic, Shaquille O'Neal.[88"""    
+    Durante a temporada de 1996-97, os Lakers adquiriram o jovem de 17 anos Kobe Bryant do Charlotte Hornets em troca de Vlade Divac; Bryant foi selecionado na 13ª posição no draft daquele ano, vindo da Lower Merion High School em Ardmore, Pensilvânia, pelo Charlotte.[87] Los Angeles também assinou com o agente livre e ex-pivô do Orlando Magic, Shaquille O'Neal.[88""",    
     "Titulos": """Conferencia Leste: 32
     NBA: 17 títulos (segundo maior campeão)
     Copa NBA: 1"""
-]
+}
 
 def sobre(request):
     context = {
