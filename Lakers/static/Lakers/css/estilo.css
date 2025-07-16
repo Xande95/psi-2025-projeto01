@@ -9,7 +9,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif;
     font-weight: 700;
 }
-
+header div img{
+    height: 100%;
+    width: 100vw;
+}
 a {
     color: #552583;
     text-decoration: none;
