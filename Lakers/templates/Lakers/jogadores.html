@@ -9,27 +9,17 @@
   <div class="row gx-4 gx-lg-5 justify-content-center">
     <div class="col-md-10 col-lg-8 col-xl-7">
       <!-- Post preview -->
-      {% for post in lista_jogadores %}
-      <div class="post-preview">
-        <a href="{% url 'jogador' post.id  %}">
-          <h2 class="post-title">{{ post.Nome }}</h2>
-          <h3 class="post-subtitle">{{ post.Posição }}</h3>
-        </a>
-        <p class="post-meta">
-          Número: {{ post.Número }}
-          {% if post.foto %}
-          <img src="{% static post.foto %}" alt="{{ post.Nome }}" class="img-fluid" style="width: 100px; height: auto;">
-          {% else %}
-          <img src="{% static 'Lakers/img/default.jpg' %}" alt="Imagem Padrão" class="img-fluid" style="width: 100px; height: auto;">
-          {% endif %}
-      </div>
-      <!-- Divider -->
-      <hr class="my-4" />
+      {% for jogador in jogadores %}
+        <div class="card mb-3">
+          <div class="card-body">
+            <h2 class="card-title">{{ jogador.nome }}</h2>
+            <img src="{% static jogador.foto %}" alt="Foto de {{ jogador.nome }}" class="img-fluid mb-2" style="max-height: 250px;">
+            <p class="card-text"><small class="text-muted">Posição: {{ jogador.posicao }}</small></p>
+            <p class="card-text"><small class="text-muted">Número: {{ jogador.numero }}</small></p>
+            <a href="{{ jogador.link }}" class="btn btn-primary">Mais detalhes</a>
+          </div>
+        </div>
       {% endfor %}
-      <!-- Pager -->
-      <div class="d-flex justify-content-end mb-4">
-        <a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a>
-      </div>
     </div>
   </div>
 </div>

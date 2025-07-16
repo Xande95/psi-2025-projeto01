@@ -7,80 +7,87 @@ def index(request):
 lista_jogadores = [ 
     {
         "id": 1,
-        "Nome": "LeBron James",
+        "nome": "LeBron James",
         "posicao": "Ala-Pivô",
-        'Número': "23",
-        "foto": "{% static 'Lakers/img/LebBronJames.jpg' %} ",
-        },
+        "numero": "23",
+        "foto": "Lakers/img/LeBronJames.jpg",
+    },
     {
         "id": 2,
-        "Nome": "Luka Dončić",
+        "nome": "Luka Dončić",
         "posicao": "Armador",
-        'Número': "77",
-        "foto":"{% static 'Lakers/img/luka_don.jpeg' %} ",
-        },
+        "numero": "77",
+        "foto": "Lakers/img/luka_don.jpeg",
+    },
     {
         "id": 3,
-        "Nome": "Austin Reaves",
+        "nome": "Austin Reaves",
         "posicao": "Armador",
-        'Número': "15",
-        "foto":"{% static 'Lakers/img/austin_reaves.jpeg' %} ",
+        "numero": "15",
+        "foto": "Lakers/img/austin_reaves.jpeg",
     },
-    {   "id": 4,
-        "Nome": "Bronny James",
+    {
+        "id": 4,
+        "nome": "Bronny James",
         "posicao": "Armador",
-        'Número': "9",
-        "foto":"{% static 'Lakers/img/bronny.jpeg' %} ",
-        },
-
-        {"id": 5,
-        "Nome": "Rui Hachimura",
+        "numero": "9",
+        "foto": "Lakers/img/bronny.jpeg",
+    },
+    {
+        "id": 5,
+        "nome": "Rui Hachimura",
         "posicao": "ala-pivô",
-        'Número': "28",
-        "foto":"{% static 'Lakers/img/hachimura.jpeg' %} ",},
-
-        {"id": 6,
-        "Nome": "Gabe Vicent",
+        "numero": "28",
+        "foto": "Lakers/img/hachimura.jpeg",
+    },
+    {
+        "id": 6,
+        "nome": "Gabe Vicent",
         "posicao": "Ala-Armador",
-        'Número': "7",
-        "foto":"{% static 'Lakers/img/gabe_vincent.jpeg' %} ",},
-
-        {"id": 7,
-        "Nome": "Jaxon Hayes",
+        "numero": "7",
+        "foto": "Lakers/img/gabe_vicent.jpeg",
+    },
+    {
+        "id": 7,
+        "nome": "Jaxon Hayes",
         "posicao": "Pivô",
-        'Número': "11",
-        "foto":"{% static 'Lakers/img/jaxson_reyes.jpeg' %} ",},
-
-        {"id": 8,
-        "Nome": "Dalton Knecht",
+        "numero": "11",
+        "foto": "Lakers/img/jaxson_Hayes.jpeg",
+    },
+    {
+        "id": 8,
+        "nome": "Dalton Knecht",
         "posicao": "Armador",
-        'Número': "4",
-        "foto":"{% static 'Lakers/img/dalton.jpeg' %} ",},
-
-        {"id": 9,
-        "Nome": "Alex Len",
+        "numero": "4",
+        "foto": "Lakers/img/dalton.jpeg",
+    },
+    {
+        "id": 9,
+        "nome": "Alex Len",
         "posicao": "Pivô",
-        'Número': "27",
-        "foto":"{% static 'Lakers/img/len.jpeg' %} ",},
-
-        {"id": 10,
-        "Nome": "Shake Milton",
+        "numero": "27",
+        "foto": "Lakers/img/len.jpeg",
+    },
+    {
+        "id": 10,
+        "nome": "Shake Milton",
         "posicao": "Ala-Pivô",
-        'Número': "20",
-        "foto":"{% static 'Lakers/img/shake_milton.png' %} ",},
-
-        {"id": 11,
-        "Nome": "Trey Jemisson III",
+        "numero": "20",
+        "foto": "Lakers/img/shake_milton.png",
+    },
+    {
+        "id": 11,
+        "nome": "Trey Jemisson III",
         "posicao": "Pivô",
-        'Número': "55",
-        "foto":"{% static 'Lakers/img/trey.png' %} ",},
-        ]
-
+        "numero": "55",
+        "foto": "Lakers/img/trey.png",
+    },
+]
 
 def jogadores(request):
     context = {
-        'jogadores': lista_jogadores
-    }
+        "jogadores": lista_jogadores,
+        }
     return render(request, "Lakers/jogadores.html", context)
     
 
